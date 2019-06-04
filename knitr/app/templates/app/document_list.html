@@ -3,7 +3,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h4 id="title">{% trans "Documents" %}</h4>
             <table class="table table-condensed">
                 {% if document_list %}
                     {% for document in document_list %}
@@ -37,7 +36,7 @@
                         </ul>
                     {% endif %}
                 {% else %}
-                    <tr><td>{% trans "There are no documents available" %}</td></tr>
+                    <tr><td>There are no documents available</td></tr>
                 {% endif %}
             </table>
         </div>

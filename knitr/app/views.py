@@ -10,4 +10,4 @@ class DocumentListView(generics.RetrieveAPIView):
     renderer_classes = (TemplateHTMLRenderer, )
 
     def get(self, request, *args, **kwargs):
-        return Response(template_name='document_list.html')
+        return Response(template_name='app/document_list.html')
