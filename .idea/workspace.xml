@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9478d79-cb5a-446e-a479-e9a098d2ff0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/app/templates/app/document_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/app/templates/app/document_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/knitr/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/knitr/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knitr/knitr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/knitr/knitr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="d9478d79-cb5a-446e-a479-e9a098d2ff0c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,26 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="document_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knitr/app/templates/app/document_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/knitr/app/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,14 +86,6 @@
               <item name="knitr" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="knitr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="knitr" type="462c0819:PsiDirectoryNode" />
-              <item name="knitr" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,7 +190,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -363,17 +325,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knitr/app/templates/app/document_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/knitr/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knitr/app/templates/app/document_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
