@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 id="title">{% trans "Documents" %}</h4>
+            <table class="table table-condensed">
+                {% if document_list %}
+                    {% for document in document_list %}
+                        <tr>
+                            <td>
+                                <a onclick="showLoader()" href="{{ document.get_absolute_url }}">
+                                    {{ document.title }}
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    {% if is_paginated %}
+                        <ul class="pagination">
+                            {% if page_obj.has_previous %}
+                                <li><a onclick="showLoader()" href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+                            {% else %}
+                                <li class="disabled"><span>&laquo;</span></li>
+                            {% endif %}
+                            {% for i in paginator.page_range %}
+                            {% if page_obj.number == i %}
+                                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                                {% else %}
+                                    <li><a onclick="showLoader()" href="?page={{ i }}">{{ i }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+                                <li><a onclick="showLoader()" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+                            {% else %}
+                                <li class="disabled"><span>&raquo;</span></li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                {% else %}
+                    <tr><td>{% trans "There are no documents available" %}</td></tr>
+                {% endif %}
+            </table>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

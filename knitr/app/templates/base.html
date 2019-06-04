@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        {% block title %}<title>Knitr</title>{% endblock %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/static/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+        <link rel="stylesheet" href="/static/app/css/app.css">
+        <link rel="stylesheet" href="/static/app/css/loader.css">
+        <script type="text/javascript" src="/static/jquery/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/static/moment/js/moment.min.js"></script>
+        <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    </head>
+    <body>
+        <!--{% include 'session_security/all.html' %}-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a id="navbar-brand" class="navbar-brand" href="/">Knitr</a><br>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if user.is_authenticated %}
+                            <li><a title="Admin console" id="navbar-admin" target="_blank" href="/admin/"><span class="glyphicon glyphicon-cog glyphicon-white"></span></a></li>
+                            <li><a title="Home" id="navbar-home" href="/"><span class="glyphicon glyphicon-home glyphicon-white"></span></a></li>
+                            <li><a title="Active user" id="navbar-username" href="#">{% trans "Welcome" %}, {{ user.username }}</a></li>
+                            <li><a title="Logout" id="navbar-logout" href="/accounts/logout/?next=/app/logged-out"><span class="glyphicon glyphicon-log-out glyphicon-white"></span></a></li>
+                            <!--<li><a title="Export to Excel" id="navbar-export" style="color: white;" href="/app/export_excel/" class="glyphicon glyphicon-download-alt"></a></li>-->
+                            <li><a title="Change password" id="navbar-password" style="color: white;" href="/registration/change_password/" class="glyphicon glyphicon-lock"></a></li>
+                        {% else %}
+                            <li><a title="Login" id="navbar-logout" href="/accounts/login/"><span class="glyphicon glyphicon-log-in glyphicon-white"></span></a></li>
+                        {% endif %}
+                        <!--<li><a title="Select language" href="/app/select_language/"><span class="glyphicon glyphicon-globe glyphicon-white"></span></a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Place sub pages here -->
+            {% block content %}{% endblock %}
+        </div>
+        <!-- Add animation that provides feedback to the user that something is loading -->
+        <div id="loader" hidden></div>
+        <script src="/static/app/js/loader.js"></script>
+        <!-- Footer -->
+        <footer class="footer navbar-fixed-bottom">
+            <div class="container">
+                <p class="text-muted">© 2019 Knitr (by Ralph Brecheisen)</p>
+            </div>
+        </footer>
+    </body>
+</html>
