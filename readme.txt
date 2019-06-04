@@ -6,7 +6,4 @@ specify a nice title + description for it.
 TODO
 
 - Dockerize the app
-- Admin page
-  - Upload new Knitr HTML docs (provide name+desc)
-- Deploy to DataHub
-
+- Deploy to FHML server 075
